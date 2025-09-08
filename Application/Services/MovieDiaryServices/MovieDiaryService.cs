@@ -50,4 +50,3 @@ namespace Application.Services.MovieDiaryServices
         }
     }
 }
-////////////////////
