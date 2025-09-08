@@ -22,6 +22,7 @@ namespace Domain.Entities
         public virtual Genre Genre { get; set; }
 
         public int MembersCount { get; set; }
+        public int MembersRatedCount { get; set; }
 
         public virtual ICollection<Log> Logs { get; set; } = new List<Log>();
         public virtual ICollection<MovieDiary> MovieDiaries { get; set; } = new List<MovieDiary>();

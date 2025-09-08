@@ -21,13 +21,11 @@ namespace Application.Mapping
             CreateMap<Genre, GenreDto>().ReverseMap();
             #endregion
 
+            #region Log
             CreateMap<AddLogRequestDto, Log>();
             CreateMap<Log, AddLogResponseDto>();
-            CreateMap<Log, GetLogResponseDto>();
-
-
-            CreateMap<MovieDiary, GetMovieDiaryResponse>()
-                .ForMember(dest => dest.Movie, opt => opt.MapFrom(src => src.Movie.Name));
+            CreateMap<Log, GetLogResponseDto>(); 
+            #endregion
         }
     }
 }

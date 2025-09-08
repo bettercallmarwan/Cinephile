@@ -1,4 +1,4 @@
-﻿using Application.DTOs.LogDTOs;
+﻿    using Application.DTOs.LogDTOs;
 using Domain.Entities;
 
 namespace Application.DTOs.MovieDiaryDTOs

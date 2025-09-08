@@ -12,7 +12,6 @@ namespace Application.Services.GenreServices
         private readonly IGenericRepository<Genre> _genreRepository;
         private readonly IMapper _mapper;
 
-
         public GenreService(IGenericRepository<Genre> genreRepository, IMapper mapper)
         {
             _genreRepository = genreRepository;

@@ -30,16 +30,12 @@ namespace Application.Services.MovieDiaryServices
                 };
 
                 await _movieDiaryRepository.AddAsync(movieDiary);
-                await _movieDiaryRepository.SaveChangesAsync();
-   
             }
             else
             {
                 movieDiary.LogCount++;
 
                 _movieDiaryRepository.Update(movieDiary);
-                await _movieDiaryRepository.SaveChangesAsync();
-
             }
 
             return movieDiary;
